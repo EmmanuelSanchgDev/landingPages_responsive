@@ -3,6 +3,7 @@
     --colorTitle: #642A73;
     --bg-color: #F2F2F2;
     --bg-card: #4D0686;
+    --bg-footer: #414141;
 }
 * {
     box-sizing: border-box;
@@ -137,19 +138,107 @@ body {
     object-fit: cover;
 }
 
-img.testimonials__child {
-    width: 30px;
-}
 
 .testimonials {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     min-width: 36rem;
-    padding: 0 3rem;
+    padding: 0 3rem 5rem;
 }
 .testimonials__card {
-    /* min-width: 32rem; */
-    aspect-ratio: 9 / 16;
+    /* width: 100%; */
+    aspect-ratio: 9 / 14;
     background-color: var(--bg-card);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    
+    padding: 6rem;
+    margin-bottom: 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 10px ;
+}
+img {
+    width: 30px;
+}
+.testimonials__child {
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials__image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.3rem solid var(--white);
+}
+.testimonials__title {
+    width: 100%;
+}
+.testimonials__description {
+    color: var(--white);
+}
+
+.services {
+    background-color: var(--bg-color);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 4rem;
+}
+.services__card {
+    padding: 2rem;
+    min-width: 36rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services__image {
+    width: 100%;
+}
+.services__title {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.footer {
+    background-color: var(--bg-footer);
+}
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    height: 40rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.contact__metodo {
+    min-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border-bottom: 0.1rem solid var(--white);
+}
+.contact__title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.copyright {
+    font-size: 2rem;
+    border: none;
+    color: #9E9797;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 4rem;
 }
