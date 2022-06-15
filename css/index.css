@@ -267,6 +267,7 @@ body {
     }
     .contact {
         height: 12rem;
+        border-bottom: 0.1rem solid var(--white);
     }
     .contact__title {
         border-bottom: 0.4rem solid var(--border-bottom);
@@ -274,5 +275,15 @@ body {
     .contact__metodo {
         width: 30%;
         border: none;
+    }
+}
+@media screen and (min-width: 650px) {
+    .products__conteiner {
+        min-width: 30rem;
+        width: 50%;
+    }
+    .services__card {
+        min-width: 20rem;
+        width: 30%;
     }
 }
