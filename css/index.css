@@ -281,6 +281,19 @@ body {
     }
 }
 @media screen and (min-width: 650px) {
+    .header {
+        justify-content: flex-end;
+        padding-right: 5rem;
+    }
+    .header__links {
+        margin-right: 2rem;
+    }
+    .hero__title {
+        font-size: 5rem;
+    }
+    .hero__sub-title {
+        font-size: 3rem;
+    }
     .products__conteiner {
         min-width: 30rem;
         width: 50%;
@@ -291,12 +304,6 @@ body {
     }
 }
 @media screen and (min-width: 850px) {
-    .portafolio__conteiner-cards {
-        margin: 0 auto;
-        justify-content: space-evenly;
-        max-width: 1600px;
-        height: 60rem;
-    }
     .testimonials {
         height: 50rem;
     }
