@@ -78,10 +78,13 @@ body {
 
 .products {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     padding-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 .title {
     font-size: 3rem;
@@ -126,7 +129,7 @@ body {
 
 .portafolio {
     background-color: var(--bg-color);
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 .portafolio__conteiner-cards {
     width: 100%;
@@ -252,7 +255,7 @@ body {
 @media screen and (min-width: 476px) {
     .portafolio__card {
         min-width: 20rem;
-        width: 20rem;
+        width: 22%;
     }
     .testimonials__card {
         aspect-ratio: 14 / 7;
@@ -285,5 +288,26 @@ body {
     .services__card {
         min-width: 20rem;
         width: 30%;
+    }
+}
+@media screen and (min-width: 850px) {
+    .portafolio__conteiner-cards {
+        margin: 0 auto;
+        justify-content: space-evenly;
+        max-width: 1600px;
+        height: 60rem;
+    }
+    .testimonials {
+        height: 50rem;
+    }
+    .testimonials__conteiner {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30rem;
+        max-width: 1000px;
+    }
+    .testimonials__card {
+        max-width: 400px;
     }
 }
